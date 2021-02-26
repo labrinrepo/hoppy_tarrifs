@@ -1,0 +1,258 @@
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="tags for website">
+    <meta name="description" content="front-end starter">
+    <meta name="author" content="Labrin.net">
+
+    <title> Home - Project Title </title>
+
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<header id="header">
+    <div class="container">
+        <div class="row headerMain">
+            <div class="col-md-2 col-8 logo">
+                <a href="">
+                    <img class="img-fluid" src="../assets/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <ul class="pagesLink">
+                    <li><a href="">how it works</a></li>
+                    <li><a href="">buy for me</a></li>
+                    <li><a href="">shipping calculator</a></li>
+                    <li><a href="">news</a></li>
+                    <li><a href="">contacts</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 langLogin">
+                <select id="selectLanguages">
+                    <option value="AZE">AZE</option>
+                    <option value="EN">EN</option>
+                    <option value="RU">RU</option>
+                </select>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        SHAIG MURADOV
+                    </button>
+                    <i class="fa fa-bell"></i>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">My foreign addresses</button>
+                        <button class="dropdown-item" type="button">ORDERS</button>
+                        <button class="dropdown-item" type="button">My declarations</button>
+                        <button class="dropdown-item" type="button">Balance</button>
+                        <button class="dropdown-item" type="button">Settings</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menuBar">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="mobileMenu">
+            <div class="langLogin">
+                <select id="selectLanguages">
+                    <option value="AZE">AZE</option>
+                    <option value="EN">EN</option>
+                    <option value="RU">RU</option>
+                </select>
+                <p>SHAIG MURADOV</p>
+            </div>
+            <ul class="pagesLink">
+                <li><a href="">how it works</a></li>
+                <li><a href="">buy for me</a></li>
+                <li><a href="">shipping calculator</a></li>
+                <li><a href="">news</a></li>
+                <li><a href="">contacts</a></li>
+            </ul>
+        </div>
+        <div class="layoutMobile"></div>
+    </div>
+</header>
+
+<section id="tarrifsIn">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="followLink">
+                    <li>
+                        <a href="index.html">
+                            Homepage
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            Tarrifs
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <h4>
+                    Tarrifs
+                </h4>
+            </div>
+            <div class="col-md-4 ">
+                <select id="selectCountry">
+                    <option value="Turkey">Turkey</option>
+                    <option value="USA">USA</option>
+                    <option value="China">China</option>
+                </select>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Weight</th>
+                        <th scope="col">Liquid products</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>0 kg - 0.25 kg</td>
+                        <td>1.50 USD</td>
+                    </tr>
+                    <tr>
+                        <td>0.25 kg - 0..5 kg</td>
+                        <td>3.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td>0.5 kg - 0.75 kg</td>
+                        <td>4.50 USD</td>
+                    </tr>
+                    <tr>
+                        <td>0.75 kg - 1 kg</td>
+                        <td>5.90 USD</td>
+                    </tr>
+                    <tr>
+                        <td>1kg and more</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10 kg and more</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ------------------------------------------------- Calculate Price Start --------------------------------------------------- -->
+
+            <div class="col-md-8">
+                <div class="row m-0">
+                    <div class="col-lg-5 col-md-12 calculate-price">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="weight" class="form-label">Вес посылки</label>
+                                        <div class="input-holder">
+                                            <input class="form-input" id="weight" type="number" placeholder="0">
+                                            <label for="weight-select" class="unit">
+                                                <select name="" id="weight-select">
+                                                    <option value="kg">KG</option>
+                                                    <option value="lbs">LBS</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="amount" class="form-label">Общая стоимость</label>
+                                        <div class="input-holder">
+                                            <input class="form-input" id="amount" type="number" placeholder="0">
+                                            <label for="currency" class="unit">
+                                                <select name="" id="currency">
+                                                    <option value="try">TRY</option>
+                                                    <option value="eur">EUR</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12 cost-info">
+                        <div class="row m-0">
+                            <div class="col-lg-12 py-3">
+                                <p>International express delivery: €<span id="delivery-cost">0.00</span></p>
+                                <p class="mt-3">Targeted amount of customs payments: €<span id="custom-payment">0.00</span></p>
+                                <p class="total">Общая стоимость : $<span class="total-cost">0.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------- Calculate Price Start --------------------------------------------------- -->
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 whiteLogo">
+                <a href="">
+                    <img class="img-fluid" src="../assets/whiteLogo.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <ul class="siteMap">
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">Tarrifs</a></li>
+                    <li><a href="">LOGISTIC TERMS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <ul class="siteMap">
+                    <li><a href="">SHOPS</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <ul class="appLinks">
+                    <li>
+                        <a href="">
+                            <img class="img-fluid" src="../assets/google.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="img-fluid" src="../assets/ios.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
